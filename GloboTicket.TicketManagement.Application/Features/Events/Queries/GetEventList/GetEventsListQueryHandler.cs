@@ -1,7 +1,5 @@
-﻿using AutoMapper;
-using GloboTicket.TicketManagement.Application.Contracts;
+﻿using GloboTicket.TicketManagement.Application.Contracts;
 using GloboTicket.TicketManagement.Domain.Entities;
-using MediatR;
 
 namespace GloboTicket.TicketManagement.Application.Features.Events
 {
