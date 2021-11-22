@@ -8,7 +8,7 @@ namespace GloboTicket.TicketManagement.Infrastructure
 {
    public static class InfrastructureServiceRegistration
    {
-      public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
+      public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration config)
       {
          services.Configure<EmailSettings>(config.GetSection("EmailSettings"));
          services.AddTransient<IEmailService, EmailService>();

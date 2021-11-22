@@ -24,22 +24,30 @@
          modelBuilder.Entity<Category>().HasData(new Category
          {
             CategoryId = concertGuid,
-            Name = "Concerts"
+            Name = "Concerts",
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
          modelBuilder.Entity<Category>().HasData(new Category
          {
             CategoryId = musicalGuid,
-            Name = "Musicals"
+            Name = "Musicals",
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
          modelBuilder.Entity<Category>().HasData(new Category
          {
             CategoryId = playGuid,
-            Name = "Plays"
+            Name = "Plays",
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
          modelBuilder.Entity<Category>().HasData(new Category
          {
             CategoryId = conferenceGuid,
-            Name = "Conferences"
+            Name = "Conferences",
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Event>().HasData(new Event
@@ -51,7 +59,9 @@
             Date = DateTime.Now.AddMonths(6),
             Description = "Join John for his farwell tour across 15 continents. John really needs no introduction since he has already mesmerized the world with his banjo.",
             ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/GloboTicket/banjo.jpg",
-            CategoryId = concertGuid
+            CategoryId = concertGuid,
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Event>().HasData(new Event
@@ -63,7 +73,9 @@
             Date = DateTime.Now.AddMonths(9),
             Description = "Michael Johnson doesn't need an introduction. His 25 concert across the globe last year were seen by thousands. Can we add you to the list?",
             ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/GloboTicket/michael.jpg",
-            CategoryId = concertGuid
+            CategoryId = concertGuid,
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Event>().HasData(new Event
@@ -75,7 +87,9 @@
             Date = DateTime.Now.AddMonths(4),
             Description = "DJs from all over the world will compete in this epic battle for eternal fame.",
             ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/GloboTicket/dj.jpg",
-            CategoryId = concertGuid
+            CategoryId = concertGuid,
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Event>().HasData(new Event
@@ -87,7 +101,9 @@
             Date = DateTime.Now.AddMonths(4),
             Description = "Get on the hype of Spanish Guitar concerts with Manuel.",
             ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/GloboTicket/guitar.jpg",
-            CategoryId = concertGuid
+            CategoryId = concertGuid,
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Event>().HasData(new Event
@@ -99,7 +115,9 @@
             Date = DateTime.Now.AddMonths(10),
             Description = "The best tech conference in the world",
             ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/GloboTicket/conf.jpg",
-            CategoryId = conferenceGuid
+            CategoryId = conferenceGuid,
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Event>().HasData(new Event
@@ -111,7 +129,9 @@
             Date = DateTime.Now.AddMonths(8),
             Description = "The critics are over the moon and so will you after you've watched this sing and dance extravaganza written by Nick Sailor, the man from 'My dad and sister'.",
             ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/GloboTicket/musical.jpg",
-            CategoryId = musicalGuid
+            CategoryId = musicalGuid,
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Order>().HasData(new Order
@@ -120,7 +140,9 @@
             OrderTotal = 400,
             OrderPaid = true,
             OrderPlaced = DateTime.Now,
-            UserId = Guid.Parse("{A441EB40-9636-4EE6-BE49-A66C5EC1330B}")
+            UserId = Guid.Parse("{A441EB40-9636-4EE6-BE49-A66C5EC1330B}"),
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Order>().HasData(new Order
@@ -129,7 +151,9 @@
             OrderTotal = 135,
             OrderPaid = true,
             OrderPlaced = DateTime.Now,
-            UserId = Guid.Parse("{AC3CFAF5-34FD-4E4D-BC04-AD1083DDC340}")
+            UserId = Guid.Parse("{AC3CFAF5-34FD-4E4D-BC04-AD1083DDC340}"),
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Order>().HasData(new Order
@@ -138,7 +162,9 @@
             OrderTotal = 85,
             OrderPaid = true,
             OrderPlaced = DateTime.Now,
-            UserId = Guid.Parse("{D97A15FC-0D32-41C6-9DDF-62F0735C4C1C}")
+            UserId = Guid.Parse("{D97A15FC-0D32-41C6-9DDF-62F0735C4C1C}"),
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Order>().HasData(new Order
@@ -147,7 +173,9 @@
             OrderTotal = 245,
             OrderPaid = true,
             OrderPlaced = DateTime.Now,
-            UserId = Guid.Parse("{4AD901BE-F447-46DD-BCF7-DBE401AFA203}")
+            UserId = Guid.Parse("{4AD901BE-F447-46DD-BCF7-DBE401AFA203}"),
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Order>().HasData(new Order
@@ -156,7 +184,9 @@
             OrderTotal = 142,
             OrderPaid = true,
             OrderPlaced = DateTime.Now,
-            UserId = Guid.Parse("{7AEB2C01-FE8E-4B84-A5BA-330BDF950F5C}")
+            UserId = Guid.Parse("{7AEB2C01-FE8E-4B84-A5BA-330BDF950F5C}"),
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Order>().HasData(new Order
@@ -165,7 +195,9 @@
             OrderTotal = 40,
             OrderPaid = true,
             OrderPlaced = DateTime.Now,
-            UserId = Guid.Parse("{F5A6A3A0-4227-4973-ABB5-A63FBE725923}")
+            UserId = Guid.Parse("{F5A6A3A0-4227-4973-ABB5-A63FBE725923}"),
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
 
          modelBuilder.Entity<Order>().HasData(new Order
@@ -174,7 +206,9 @@
             OrderTotal = 116,
             OrderPaid = true,
             OrderPlaced = DateTime.Now,
-            UserId = Guid.Parse("{7AEB2C01-FE8E-4B84-A5BA-330BDF950F5C}")
+            UserId = Guid.Parse("{7AEB2C01-FE8E-4B84-A5BA-330BDF950F5C}"),
+            CreatedBy = "Gerardo",
+            LastModifiedBy = "Gerardo"
          });
       }
 
